@@ -1,0 +1,6 @@
+[
+    {"nombre": "Ana", "email": "ana@empresa.com", "rol": "admin", "ventas": 150},
+    {"nombre": "Juan", "email": "juan-correo-malo", "rol": "vendedor", "ventas": 80},
+    {"nombre": "Pedro", "email": "pedro@empresa.com", "rol": "vendedor", "ventas": 120},
+    {"nombre": "Luis", "email": "luis@empresa.com", "rol": "invitado", "ventas": 0}
+]
