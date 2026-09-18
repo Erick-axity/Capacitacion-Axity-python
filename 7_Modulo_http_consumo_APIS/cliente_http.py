@@ -98,7 +98,7 @@ if __name__ == "__main__":
     URL_EXITO = "https://httpbin.org/image/jpeg"
 
     # URL trampa: Le dice al servidor de prueba que tarde 15 segundos en responder
-    URL_TIMEOUT = "https://httpbin.org/delay/15"
+    URL_TIMEOUT = "https://httpbin.org/dely/15"
 
     print("\n--- PRUEBA 1: DESCARGA EXITOSA (STREAMING) ---")
     descargar_archivo_streaming(URL_EXITO, RUTA_DESCARGA_IMAGEN)
