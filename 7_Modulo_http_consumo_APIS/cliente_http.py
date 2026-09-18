@@ -40,7 +40,7 @@ def descargar_archivo_streaming(
     timeouts estrictos y reintentos automáticos (Backoff).
     """
     # 1. TIMEOUTS: Configuramos un límite estricto (5 seg para conectar, 10 seg en total)
-    config_timeout = httpx.Timeout(10.0, connect=5.0)
+    config_timeout = httpx.Timeout(timeout=10.0, connect=5.0, read=10.0)
 
     delay = 2  # Segundos de espera inicial en caso de error
 
@@ -98,7 +98,7 @@ if __name__ == "__main__":
     URL_EXITO = "https://httpbin.org/image/jpeg"
 
     # URL trampa: Le dice al servidor de prueba que tarde 15 segundos en responder
-    URL_TIMEOUT = "https://httpbin.org/dely/15"
+    URL_TIMEOUT = "https://httpbin.org/delay/15"
 
     print("\n--- PRUEBA 1: DESCARGA EXITOSA (STREAMING) ---")
     descargar_archivo_streaming(URL_EXITO, RUTA_DESCARGA_IMAGEN)
