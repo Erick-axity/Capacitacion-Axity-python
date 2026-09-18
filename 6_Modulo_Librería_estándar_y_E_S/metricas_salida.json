@@ -1,0 +1,22 @@
+{
+    "generado_en": "2026-09-18T14:45:40.658152-06:00",
+    "registros_exitosos": 3,
+    "total_ingresos_usd": 3551.0,
+    "detalle": [
+        {
+            "producto": "Laptop",
+            "cantidad": 2,
+            "subtotal": 2401.0
+        },
+        {
+            "producto": "Mouse",
+            "cantidad": 10,
+            "subtotal": 250.0
+        },
+        {
+            "producto": "Monitor",
+            "cantidad": 3,
+            "subtotal": 900.0
+        }
+    ]
+}

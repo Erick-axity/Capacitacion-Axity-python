@@ -921,6 +921,18 @@ files = [
 typing-extensions = ">=4.15.0"
 
 [[package]]
+name = "tzdata"
+version = "2026.4"
+description = "Provider of IANA time zone data"
+optional = false
+python-versions = ">=2"
+groups = ["main"]
+files = [
+    {file = "tzdata-2026.4-py2.py3-none-any.whl", hash = "sha256:c2169a8b0a7a5e9674da5a135ccdfb2b3e671b333ed9fed17b41f73c34476e81"},
+    {file = "tzdata-2026.4.tar.gz", hash = "sha256:f1b8bd365d8d210c55353f4d7f8d6d8561c0ba50d704b700d195a9424bba0d79"},
+]
+
+[[package]]
 name = "virtualenv"
 version = "21.7.9"
 description = "Virtual Python Environment builder"
@@ -941,4 +953,4 @@ python-discovery = ">=1.6"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "6a202086f2202d91c236e1caa02bab7de2b1cf4d73f8e131f3e3932eb85e2221"
+content-hash = "a6bd61a414bf7035dd5c10b2214fc6d68d0c8bf8636aec05b12525ba74eac4b5"
