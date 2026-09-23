@@ -6,7 +6,7 @@ class BaseDeDatosSQL:
 
 class RegistroDeUsuarios:
     def __init__(self):
-        # ❌ Alto Acoplamiento: El servicio depende directamente de SQL
+        # Alto Acoplamiento: El servicio depende directamente de SQL
         self.db = BaseDeDatosSQL()
 
     def registrar(self, nombre: str):

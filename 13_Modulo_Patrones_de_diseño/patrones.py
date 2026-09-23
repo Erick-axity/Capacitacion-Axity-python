@@ -14,10 +14,10 @@ def cache_resultados(func):
 
     def wrapper(*args):
         if args in cache:
-            print(f"📦 [Caché] Retornando valor guardado para: {args}")
+            print(f"[Caché] Retornando valor guardado para: {args}")
             return cache[args]
 
-        print(f"⚙️ [Caché] Calculando nuevo valor para: {args}")
+        print(f"[Caché] Calculando nuevo valor para: {args}")
         resultado = func(*args)
         cache[args] = resultado
         return resultado
@@ -74,7 +74,7 @@ class CalculadoraCheckout:
 # A. La API Externa (Legacy/Terceros). No podemos modificar este código.
 class SistemaPagoAntiguoAPI:
     def hacer_cargo_xml(self, total_string: str) -> dict:
-        print(f"📡 API Externa: Recibido XML. Procesando cargo de {total_string}")
+        print(f"API Externa: Recibido XML. Procesando cargo de {total_string}")
         return {"status": "SUCCESS", "error_code": None}
 
 
