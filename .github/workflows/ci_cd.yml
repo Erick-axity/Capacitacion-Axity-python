@@ -1,0 +1,33 @@
+name: Pipeline CI/CD FastAPI (Modulo 17)
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./17_Modulo_CI_CD_y_Docker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install poetry==2.0.0
+      - run: poetry install
+      - run: poetry run ruff check .
+      - run: poetry run mypy .
+      - run: poetry run pytest
+      - run: poetry build
+
+  cd-docker:
+    needs: ci-tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./17_Modulo_CI_CD_y_Docker
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t mi-api-fastapi:latest .
