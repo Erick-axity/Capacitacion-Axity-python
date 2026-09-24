@@ -34,7 +34,7 @@ dev = [
 ]
 
 [tool.ruff.lint]
-ignore = ["F841"]
+ignore = ["F841","UP006"]
 
 [tool.mypy]
 exclude = ["alembic/"]
