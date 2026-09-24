@@ -17,7 +17,7 @@ jobs:
           python-version: '3.12'
       - run: pip install poetry==2.0.0
       - run: poetry lock
-      - run: poetry install
+      - run: poetry install --with dev
       - run: poetry run ruff check .
       - run: poetry run mypy .
       - run: poetry run pytest
