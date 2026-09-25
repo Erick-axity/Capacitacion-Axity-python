@@ -24,7 +24,10 @@ dependencies = [
     "numpy (>=2.5.3,<3.0.0)",
     "typer (>=0.27.2,<0.28.0)",
     "pydantic-settings (>=2.15.0,<3.0.0)",
-    "requests (>=2.34.2,<3.0.0)"
+    "requests (>=2.34.2,<3.0.0)",
+    "grpcio (>=1.84.0,<2.0.0)",
+    "grpcio-tools (>=1.84.0,<2.0.0)",
+    "redis (>=8.1.0,<9.0.0)"
 ]
 
 
@@ -66,6 +69,9 @@ markers = [
 module = [
     "pandas.*",
     "sklearn.*",
-    "joblib.*"
+    "joblib.*",
+    "grpc.*",
+    "google.protobuf.*",
+    "redis.*"
 ]
 ignore_missing_imports = true

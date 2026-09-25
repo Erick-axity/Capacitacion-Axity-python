@@ -19,4 +19,4 @@ repos:
         entry: poetry run mypy
         language: system
         types: [python]
-        exclude: '.*alembic/.*'
+        exclude: '.*(alembic/|.*_pb2.*\.py)'
